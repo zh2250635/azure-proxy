@@ -50,6 +50,9 @@ app.all("*", async (req, res) => {
         if (pathArr[1] === 'ssl') {
             ssl = true
             fackPathCount++
+        }else if(pathArr[1] === 'no-ssl'){
+            ssl = false
+            fackPathCount++
         }
         let realPath = pathArr.slice(fackPathCount).join("/");
 
