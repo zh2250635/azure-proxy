@@ -30,6 +30,6 @@ jobs:
       with:
         push: true
         tags: |
-          xhtnext/azure-openai-proxy:latest
-          xhtnext/azure-openai-proxy:${{ github.sha }}
-          xhtnext/azure-openai-proxy:${{ env.VERSION }}
+          xhtnext/azure-proxy:latest
+          xhtnext/azure-proxy:${{ github.sha }}
+          xhtnext/azure-proxy:${{ env.VERSION }}
